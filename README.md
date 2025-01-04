@@ -40,27 +40,24 @@ The LifestyleExcelAthleteGroup project transitions a paper-based model to an int
 - AI Models: TensorFlow and PyTorch
 
 # 4. Repository Structure
-
 LifestyleExcelAthleteGroup/
-│
-├── frontend/               # React.js frontend code
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── backend/                # Django backend code
-│   ├── api/
-│   ├── settings.py
-│   ├── urls.py
-│   └── requirements.txt
-│
+├── frontend/               # React.js frontend
+│   ├── src/                # React components
+│   ├── public/             # Static files
+│   └── package.json        # Frontend dependencies
+├── backend/                # Django backend
+│   ├── api/                # API app
+│   │   ├── models.py       # Django models
+│   │   ├── views.py        # API views
+│   │   ├── urls.py         # API URLs
+│   ├── settings.py         # Project settings
+│   ├── urls.py             # Main URLs
+│   └── manage.py           # Django management script
 ├── ai-development/         # AI models and scripts
-│   ├── models/
-│   ├── preprocess.py
-│   ├── train.py
-│   └── requirements.txt
-│
-└── README.md
+│   ├── preprocess.py       # Data preprocessing
+│   ├── train.py            # Model training
+│   └── requirements.txt    # AI dependencies
+├── README.md               # Project documentation
 
 # 5. Getting Started
 Prerequisites
