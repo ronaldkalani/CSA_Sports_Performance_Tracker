@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CSA_Sports_Performance_Tracker/static/css/main.e6c13ad2.css",
+    "main.js": "/CSA_Sports_Performance_Tracker/static/js/main.356ad355.js",
+    "index.html": "/CSA_Sports_Performance_Tracker/index.html",
+    "main.e6c13ad2.css.map": "/CSA_Sports_Performance_Tracker/static/css/main.e6c13ad2.css.map",
+    "main.356ad355.js.map": "/CSA_Sports_Performance_Tracker/static/js/main.356ad355.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.356ad355.js"
+  ]
+}
