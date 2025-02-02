@@ -1,174 +1,70 @@
-# CSA_Sports_Performance_Tracker
-An interactive AI-driven platform designed to enhance athletic performance by systematically developing positive character traits, such as leadership, accountability, responsibility, and goal-setting. The platform integrates workshops, training modules, and gamification, providing athletes, coaches, and admins with real-time insights and recommendations.
+# Getting Started with Create React App
 
-# Table of Contents
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. Project Overview
-2. Features
-3. Technology Stack
-4. Repository Structure
-5. Getting Started
-6. How It Works
-7. Security Features
-8. Contributing
-9. License
-    
-# 1. Project Overview
+## Available Scripts
 
-The CSA_Sports_Performance_Tracker project transitions a paper-based model to an interactive platform, focusing on developing positive character traits through workshops, skill reinforcement modules, and performance tracking. The platform provides:
-- AI-driven recommendations.
-- Gamified progress tracking.
-- Tools for coaches to assign modules and monitor athletes.
-- Administrative oversight for managing users and content.
-  
-# 2. Features
+In the project directory, you can run:
 
-1. Athlete Dashboards: Real-time progress tracking with gamification.
-2. AI-Driven Insights: Skill recommendations and performance predictions.
-3. Workshops and Modules: Focused on leadership, accountability, nutrition, and more.
-4. Role-Based Access:
-                   - Athletes: Access training modules and track progress.
-                   - Coaches: Assign modules and monitor performance.
-                   - Admins: Manage users, content, and platform analytics.
+### `npm start`
 
-# 3. Technology Stack
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- Frontend: React.js
-- Backend: Django REST Framework
-- Database: PostgreSQL
-- AI Models: TensorFlow and PyTorch
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-# 4. Repository Structure
-CSA_Sports_Performance_Tracker/
-├── frontend/               # React.js frontend
-│   ├── src/                # React components
-│   ├── public/             # Static files
-│   └── package.json        # Frontend dependencies
-├── backend/                # Django backend
-│   ├── api/                # API app
-│   │   ├── models.py       # Django models
-│   │   ├── views.py        # API views
-│   │   ├── urls.py         # API URLs
-│   ├── settings.py         # Project settings
-│   ├── urls.py             # Main URLs
-│   └── manage.py           # Django management script
-├── ai-development/         # AI models and scripts
-│   ├── preprocess.py       # Data preprocessing
-│   ├── train.py            # Model training
-│   └── requirements.txt    # AI dependencies
-├── README.md               # Project documentation
+### `npm test`
 
-# 5. Getting Started
-Prerequisites
-- Node.js (v14+)
-- Python (v3.9+)
-- PostgreSQL (v13+)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# Step 1: Clone the Repository
+### `npm run build`
 
-git clone https://github.com/ronaldkalani/CSA_Sports_Performance_Tracker.git
-cd CSA_Sports_Performance_Tracker
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# Frontend Setup
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. Navigate to the frontend directory:
-cd frontend
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. Install dependencies:
-npm install
+### `npm run eject`
 
-3. Start the development server:
-npm start
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-4. Build for production:
-npm run build
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Backend Setup
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1. Navigate to the backend directory:
-cd backend
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-2. Set up a virtual environment:
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+## Learn More
 
-3. Install dependencies:
-pip install -r requirements.txt
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-4. Run database migrations:
-python manage.py migrate
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-5. Start the Django server:
-python manage.py runserver
+### Code Splitting
 
-# AI Development Setup
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-1. Navigate to the ai-development directory:
-cd ai-development
+### Analyzing the Bundle Size
 
-2. Set up a virtual environment:
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-3. Install dependencies:
-pip install -r requirements.txt
+### Making a Progressive Web App
 
-4. Preprocess the data:
-python preprocess.py
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-5. Train the AI models:
-python train.py
+### Advanced Configuration
 
-# 6. How It Works
-  # Data Flow
-1. Frontend ↔ Backend:
-- Athletes interact with the UI, triggering API calls to the backend.
-- Example: Fetch training modules or update progress.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-2. Backend ↔ Database:
-- Backend queries PostgreSQL for user profiles, modules, or progress data.
-- Updates user progress and stores analytics.
+### Deployment
 
-3. Backend ↔ AI Models:
-- Backend sends user data (e.g., training hours) to AI models.
-- Models return recommendations or performance predictions.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-# 7. Security Features
+### `npm run build` fails to minify
 
-  # Data Encryption:
-- AES-256 encryption for data at rest.
-- HTTPS for data in transit.
-
-  # User Authentication:
-- Role-based access control for athletes, coaches, and admins.
-- Secure password validation and multi-factor authentication.
-  
-# API Security:
-- Input validation to prevent SQL injection.
-- Rate limiting to prevent abuse.
-  
-# Database Security:
-- Role-based permissions in PostgreSQL.
-- Regular automated backups.
-  
-# Monitoring:
-- Logs user actions.
-- Intrusion detection with Wazuh.
-
-# 8. Contributing
-1. Fork the Repository: Click the Fork button at the top right of this page.
-2. Clone the Repository:
-   - git clone https://github.com/ronaldkalani/CSA_Sports_Performance_Tracker.git
-3. Create a Branch:
-   - git checkout -b feature-name
-4. Commit Your Changes:
-   - git add .
-   - git commit -m "Description of feature"
-5. Push to the Branch:
-   - git push origin feature-name
-
- # 9. License
-This project is licensed under the MIT License. See LICENSE for details.
-
-
-     
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
