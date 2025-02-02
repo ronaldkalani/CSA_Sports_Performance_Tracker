@@ -1,0 +1,70 @@
+<!-- templates/visualization.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- Plotly.js library -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+        canvas, img, #plotlyDiv {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Assessment Visualization</h1>
+
+    <!-- Chart.js Visualization -->
+    <section>
+        <h2>Chart.js Visualization</h2>
+        <canvas id="chartCanvas"></canvas>
+        <script>
+            const chartData = JSON.parse('{{ chartjs_data|escapejs }}');
+            const ctx = document.getElementById('chartCanvas').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: chartData,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: { display: true, text: 'Pre vs Post Assessment Scores' }
+                    },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+        </script>
+    </section>
+
+    <!-- Matplotlib Visualization -->
+    <section>
+        <h2>Matplotlib Visualization</h2>
+        <img src="data:image/png;base64,{{ matplotlib_chart_image }}" alt="Matplotlib Graph">
+    </section>
+
+    <!-- Plotly Visualization -->
+    <section>
+        <h2>Plotly Visualization</h2>
+        <div id="plotlyDiv">
+            {{ plotly_chart_html|safe }}
+        </div>
+    </section>
+
+</body>
+</html>
