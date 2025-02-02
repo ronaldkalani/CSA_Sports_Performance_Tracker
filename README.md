@@ -1,5 +1,4 @@
-# LifestyleExcelAthleteGroup
-
+# CSA_Sports_Performance_Tracker
 An interactive AI-driven platform designed to enhance athletic performance by systematically developing positive character traits, such as leadership, accountability, responsibility, and goal-setting. The platform integrates workshops, training modules, and gamification, providing athletes, coaches, and admins with real-time insights and recommendations.
 
 # Table of Contents
@@ -16,7 +15,7 @@ An interactive AI-driven platform designed to enhance athletic performance by sy
     
 # 1. Project Overview
 
-The LifestyleExcelAthleteGroup project transitions a paper-based model to an interactive platform, focusing on developing positive character traits through workshops, skill reinforcement modules, and performance tracking. The platform provides:
+The CSA_Sports_Performance_Tracker project transitions a paper-based model to an interactive platform, focusing on developing positive character traits through workshops, skill reinforcement modules, and performance tracking. The platform provides:
 - AI-driven recommendations.
 - Gamified progress tracking.
 - Tools for coaches to assign modules and monitor athletes.
@@ -40,7 +39,7 @@ The LifestyleExcelAthleteGroup project transitions a paper-based model to an int
 - AI Models: TensorFlow and PyTorch
 
 # 4. Repository Structure
-LifestyleExcelAthleteGroup/
+CSA_Sports_Performance_Tracker/
 ├── frontend/               # React.js frontend
 │   ├── src/                # React components
 │   ├── public/             # Static files
@@ -68,7 +67,7 @@ Prerequisites
 # Step 1: Clone the Repository
 
 git clone https://github.com/username/LifestyleExcelAthleteGroup.git
-cd LifestyleExcelAthleteGroup
+cd CSA_Sports_Performance_Tracker
 
 # Frontend Setup
 
