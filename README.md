@@ -66,7 +66,7 @@ Prerequisites
 
 # Step 1: Clone the Repository
 
-git clone https://github.com/username/LifestyleExcelAthleteGroup.git
+git clone https://github.com/ronaldkalani/CSA_Sports_Performance_Tracker.git
 cd CSA_Sports_Performance_Tracker
 
 # Frontend Setup
@@ -158,7 +158,7 @@ python train.py
 # 8. Contributing
 1. Fork the Repository: Click the Fork button at the top right of this page.
 2. Clone the Repository:
-   - git clone https://github.com/username/LifestyleExcelAthleteGroup.git
+   - git clone https://github.com/ronaldkalani/CSA_Sports_Performance_Tracker.git
 3. Create a Branch:
    - git checkout -b feature-name
 4. Commit Your Changes:
